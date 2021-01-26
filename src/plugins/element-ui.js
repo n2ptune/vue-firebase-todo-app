@@ -1,7 +1,7 @@
 import Vue from 'vue'
-import { Button, Col, Row } from 'element-ui'
-// import 'element-ui/lib/theme-chalk/index.css'
+import { Row, Col, Input, Button } from 'element-ui'
 
-Vue.use(Button)
 Vue.use(Row)
 Vue.use(Col)
+Vue.use(Input)
+Vue.use(Button)

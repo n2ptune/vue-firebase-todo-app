@@ -3,8 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import firebaseApp from './plugins/firebase'
-import './plugins/element-ui'
 import './styles/global.scss'
+import './plugins/element-ui'
 
 Vue.prototype.$firebase = firebaseApp
 Vue.config.productionTip = false

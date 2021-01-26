@@ -1,28 +1,20 @@
 <template>
   <main class="root">
     <Header />
-    <el-row justify="center" type="flex">
-      <el-col :sm="24" :md="18" :lg="12" :xl="8" :style="columnWrapperStyle">
-        <router-view />
-      </el-col>
-    </el-row>
+    <Container>
+      <router-view />
+    </Container>
   </main>
 </template>
 
 <script>
 import Header from '@/components/common/Header.vue'
+import Container from '@/components/common/Container.vue'
 
 export default {
   components: {
-    Header
-  },
-
-  data() {
-    return {
-      columnWrapperStyle: {
-        margin: '1rem 0'
-      }
-    }
+    Header,
+    Container
   }
 }
 </script>
